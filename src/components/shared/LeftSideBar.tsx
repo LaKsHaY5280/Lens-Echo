@@ -6,7 +6,7 @@ import { useUserContext } from "@/context/AuthContext";
 import { sidebarLinks } from "@/constants";
 import { INavLink } from "@/lib/appwrite/types";
 
-const LeftSidebar = () => {
+const LeftSideBar = () => {
   const { mutate: signOut, isSuccess } = useSignOutAccount();
   const navigate = useNavigate();
   const { pathname } = useLocation();
@@ -77,4 +77,4 @@ const LeftSidebar = () => {
   );
 };
 
-export default LeftSidebar;
+export default LeftSideBar;
